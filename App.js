@@ -1,18 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import BottomNav from "./src/components/BottomNav";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <FontAwesome
-        name="facebook"
-        size={18}
-        color="#25292e"
-        style={styles.buttonIcon}
-      />
-      <StatusBar style="auto" />
+      <BottomNav />
     </View>
   );
 }
@@ -21,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
   },
 });
